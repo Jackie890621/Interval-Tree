@@ -30,3 +30,24 @@ distance constraint. Only output the rectangle which cover the pattern rectangle
 Please output the rectangle ID in ascending order.
 
 **Distance constraint is set as 20.**
+#### For example
+
+![image](https://user-images.githubusercontent.com/66109376/146677538-ac8366c4-e3b2-4d0c-9965-a9f22609b13f.png)
+
+* If the mode is S, please output the rectangle ID.
+* If the mode is A, please output the rectangle ID which area is smallest with the
+same given coordinate of lower-left corner rectangles.
+* Please output the action mode in the input file in order.
+
+## Compile format
+```
+ g++ -std=c++11 0710747.cpp -o Lab1
+```
+```
+./Lab1 [input] [output]
+```
+
+## Check your answer
+```
+diff -b [output] [golden_answer]
+```
